@@ -32,8 +32,8 @@ export default function CancerTreatmentSection() {
   ];
 
   return (
-    <section className="w-full bg-white py-16 md:py-20 ">
-      <div className="mx-auto max-w-[1350px] w-[90%]">
+    <section id="informed" className="w-full bg-white py-16 md:py-20 ">
+      <div className="mx-auto max-w-[1440px] w-[90%]">
         {/* Header */}
         <div className="mb-8 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#009788]">
@@ -48,7 +48,7 @@ export default function CancerTreatmentSection() {
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-2 md:gap-4 xl:gap-0">
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-2 md:gap-4  xl:gap-4 2xl:gap-0">
           {/* Left Column */}
           <div className="grid grid-cols-2 gap-3 md:gap-4 order-1">
             {leftColumnCancers.map((cancer) => (

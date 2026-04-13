@@ -2,8 +2,8 @@
 
 export default function AboutCenter() {
   return (
-    <section className="w-full bg-white py-8 md:pt-8 md:pb-14">
-      <div className="mx-auto max-w-[1350px] w-[90%] md:w-[80%]">
+    <section id="about" className="w-full bg-white py-10 md:py-16">
+      <div className="mx-auto max-w-[1440px] w-[90%]">
         {/* Text Content */}
         <div className="flex flex-col md:flex-row gap-6">
           {/* Heading */}
@@ -33,7 +33,7 @@ export default function AboutCenter() {
           <img
             src="/about-new.png"
             alt="Advanced Oncology Center building"
-            className="w-full h-auto rounded-lg shadow-lg object-cover"
+            className="w-full h-56 md:h-auto rounded-lg shadow-lg object-cover"
           />
         </div>
       </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function CancerCareServices() {
   const services = [
     {
@@ -24,8 +26,8 @@ export default function CancerCareServices() {
   ];
 
   return (
-    <section className="w-full bg-white py-8 md:pt-14 md:pb-8">
-      <div className="mx-auto max-w-[1350px] w-[90%] md:w-[80%]">
+    <section id="services" className="w-full bg-white pt-14  md:pt-14 md:pb-8">
+      <div className="mx-auto max-w-[1440px] w-[90%] md:w-[80%]">
         {/* Header */}
         <div className="text-center mb-6 md:mb-7">
           <p className="mb-2 md:mb-3 text-xs md:text-sm font-semibold uppercase tracking-wider text-[#009788]">
@@ -39,9 +41,11 @@ export default function CancerCareServices() {
           </h2>
 
           <p className="text-sm sm:text-base text-[#333] 2xl:text-lg">
-            We believe healing is more than medicine. That&apos;s why we combine cutting-edge equipment with genuine human support, ensuring every patient feels safe,
-            understood, and cared for. Whether you are beginning your journey or seeking a second opinion, our center offers the knowledge, experience, and comfort you
-            need.
+            We believe healing is more than medicine. That&apos;s why we combine
+            cutting-edge equipment with genuine human support, ensuring every
+            patient feels safe, understood, and cared for. Whether you are
+            beginning your journey or seeking a second opinion, our center
+            offers the knowledge, experience, and comfort you need.
           </p>
         </div>
 
@@ -53,8 +57,10 @@ export default function CancerCareServices() {
               className="flex flex-col border border-[#009788]/30 rounded-lg p-4 md:p-5 bg-white shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md"
             >
               {/* Image Container */}
-              <div className="mb-3 rounded-lg overflow-hidden h-44 sm:h-48 bg-gray-200">
-                <img
+              <div className="mb-3 rounded-lg overflow-hidden h-44 sm:h-60 bg-gray-200">
+                <Image
+                  width={2000}
+                  height={2000}
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover"

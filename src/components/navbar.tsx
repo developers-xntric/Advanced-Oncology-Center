@@ -17,9 +17,26 @@ export default function Navbar() {
         { label: 'Contact', href: '#contact' },
     ];
 
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        e.preventDefault();
+        const id = href.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+            const navbarHeight = 80; // Approximate navbar height
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+        setIsOpen(false); // Close mobile menu on click
+    };
+
     return (
-        <nav className="fixed w-full z-50 py-4 px-4 sm:px-6">
-            <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
+        <nav className="fixed w-full z-50 py-4 ">
+            <div className="max-w-[1440px] w-[90%] mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <div className="shrink-0 flex items-center">
@@ -39,6 +56,7 @@ export default function Navbar() {
                             <a
                                 key={item.label}
                                 href={item.href}
+                                onClick={(e) => handleNavClick(e, item.href)}
                                 className="text-[#434B4D] text-[15px] font-medium hover:text-teal-600 transition-colors duration-200 whitespace-nowrap"
                             >
                                 {item.label}
@@ -73,8 +91,10 @@ export default function Navbar() {
                                 <a
                                     key={item.label}
                                     href={item.href}
+                                    onClick={(e) => {
+                                        handleNavClick(e, item.href);
+                                    }}
                                     className="block px-4 py-2.5 rounded-lg text-[#434B4D] hover:bg-teal-50 hover:text-teal-600 transition-colors font-medium"
-                                    onClick={() => setIsOpen(false)}
                                 >
                                     {item.label}
                                 </a>
