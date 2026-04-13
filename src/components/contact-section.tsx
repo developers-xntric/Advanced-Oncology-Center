@@ -48,7 +48,7 @@ export default function ContactSection() {
     ];
 
     return (
-        <section id="contact" className="py-12 md:py-20 bg-gradient-to-b from-white to-teal-50">
+        <section id="contact" className="py-12 md:py-20 bg-linear-to-b from-white to-teal-50">
             {/* Contact Header */}
             <div className="text-center mb-12 md:mb-16 px-4">
                 <p className="text-teal-600 text-sm md:text-base font-semibold uppercase tracking-wide mb-2">
