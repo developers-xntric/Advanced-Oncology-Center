@@ -160,7 +160,7 @@ export default function ContactSection() {
                                 <div className="bg-[rgba(255,255,255,0.20)] border border-[rgba(255,255,255,0.50)] w-14 h-12 flex items-center justify-center rounded-xl">
                                     <IconComponent />
                                 </div>
-                                <h3 className="text-lg md:text-[19px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
+                                <h3 className="text-lg md:text-[17.5px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
                             </div>
                         );
                     })}
