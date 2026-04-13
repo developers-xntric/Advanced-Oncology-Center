@@ -47,7 +47,7 @@ export default function Navbar() {
 
                         {/* Phone Button - Desktop */}
                         <div className="hidden md:flex items-center ml-4">
-                            <button className="bg-[url('/cbg.png')] bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
+                            <button className="bg-[url('/cbg.png')] cursor-pointer bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
                                 <Contact />
                             </button>
                         </div>
@@ -56,9 +56,6 @@ export default function Navbar() {
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-3">
-                        <button className="bg-[url('/cbg.png')] bg-cover bg-no-repeat text-white p-2 rounded-lg transition-colors">
-                            <Contact />
-                        </button>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="inline-flex items-center justify-center p-2 text-[#434B4D] hover:bg-gray-100 rounded-lg transition-colors"
