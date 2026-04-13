@@ -5,6 +5,7 @@ import AboutCenter from "@/components/AboutCenter";
 import CancerCareServices from "@/components/CancerCareServices";
 import HealingSection from "@/components/HealingSection";
 import SecondOpinionSection from "@/components/SecondOpinionSection";
+import ContactSection from "@/components/contact-section";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <CancerTreatmentSection />
       <HealingSection />
       <SecondOpinionSection />
+      {/* <ContactSection /> */}
     </div>
   );
 }
