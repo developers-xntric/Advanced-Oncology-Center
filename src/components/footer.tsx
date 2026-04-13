@@ -7,22 +7,22 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-teal-700 text-white">
+        <footer className="bg-white text-black">
             {/* Main Footer Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
                     {/* Logo and About Section */}
-                    <div className="md:col-span-4">
+                    <div className="md:col-span-4 bg-[url('/footer-lbg.png')] bg-cover bg-no-repeat">
                         <div className="mb-6">
                             <Image
-                                src="/logo.png"
+                                src="/flogo.png"
                                 alt="Advanced Oncology Centre"
-                                width={150}
-                                height={60}
-                                className="h-16 w-auto object-contain filter brightness-0 invert"
+                                width={600}
+                                height={600}
+                                className="h-16 w-auto object-contain"
                             />
                         </div>
-                        <p className="text-teal-100 text-sm md:text-base leading-relaxed mb-6">
+                        <p className="text-black text-sm md:text-base leading-relaxed mb-6">
                             We dedicated to providing flexible & accessible healthcare services.
                         </p>
 
@@ -60,7 +60,7 @@ export default function Footer() {
                                 <li key={link}>
                                     <a
                                         href="#"
-                                        className="text-teal-100 hover:text-white transition-colors duration-200 text-sm md:text-base"
+                                        className="text-black hover:text-white transition-colors duration-200 text-sm md:text-base"
                                     >
                                         {link}
                                     </a>
@@ -77,7 +77,7 @@ export default function Footer() {
                                 <li key={service}>
                                     <a
                                         href="#"
-                                        className="text-teal-100 hover:text-white transition-colors duration-200 text-sm md:text-base"
+                                        className="text-black hover:text-white transition-colors duration-200 text-sm md:text-base"
                                     >
                                         {service}
                                     </a>
@@ -91,15 +91,15 @@ export default function Footer() {
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Location</h3>
                         <div className="relative h-48 md:h-56 rounded-lg overflow-hidden">
                             <Image
-                                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/footer-map-QNxBkVCgwgzJfpN6rRhtO3HwqSmFoY.png"
+                                src="/footer-map.png"
                                 alt="Advanced Oncology Center location map"
                                 fill
                                 className="object-cover"
                             />
                         </div>
-                        <p className="text-teal-100 text-xs md:text-sm mt-3">
+                        {/* <p className="text-black text-xs md:text-sm mt-3">
                             PL-776(1163/02), Sharjah Healthcare City, Sharjah Healthcare City, Sharjah
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
@@ -110,14 +110,14 @@ export default function Footer() {
             {/* Copyright Section */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-8">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p className="text-teal-100 text-xs md:text-sm text-center md:text-left">
+                    <p className="text-black text-xs md:text-sm text-center md:text-left">
                         Copyright © {currentYear} Advanced Oncology Center. All rights reserved.
                     </p>
                     <div className="flex gap-6">
-                        <a href="#" className="text-teal-100 hover:text-white text-xs md:text-sm transition-colors duration-200">
+                        <a href="#" className="text-black hover:text-white text-xs md:text-sm transition-colors duration-200">
                             Privacy Policy
                         </a>
-                        <a href="#" className="text-teal-100 hover:text-white text-xs md:text-sm transition-colors duration-200">
+                        <a href="#" className="text-black hover:text-white text-xs md:text-sm transition-colors duration-200">
                             Terms of Service
                         </a>
                     </div>

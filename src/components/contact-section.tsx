@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
-import Image from 'next/image';
-import ESO from './icons/eso';
-import CT from './icons/ct';
-import Heart from './icons/heart';
 import { Send } from 'lucide-react';
+import Image from 'next/image';
+import { useState } from 'react';
+import CT from './icons/ct';
+import ESO from './icons/eso';
+import Heart from './icons/heart';
 
 export default function ContactSection() {
     const [formData, setFormData] = useState({
