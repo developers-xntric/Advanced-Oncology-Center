@@ -100,13 +100,8 @@ export default function Footer() {
 
                     {/* Map Section */}
                     <div className="md:col-span-4">
-                        <div className="relative h-48 md:h-56 rounded-lg overflow-hidden">
-                            <Image
-                                src="/footer-map.png"
-                                alt="Advanced Oncology Center location map"
-                                fill
-                                className="object-cover"
-                            />
+                        <div className="relative h-48 md:h-64 rounded-lg overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.84421775294!2d55.5697656!3d25.309437499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f57224798acf%3A0xad0d63c2c80585f6!2sSharjah%20Healthcare%20city!5e0!3m2!1sen!2s!4v1776080065911!5m2!1sen!2s" width="400" height="300" style={{ border: 0 }} allowFullScreen={true} loading="lazy"></iframe>
                         </div>
                         {/* <p className="text-black text-xs md:text-sm mt-3">
                             PL-776(1163/02), Sharjah Healthcare City, Sharjah Healthcare City, Sharjah
