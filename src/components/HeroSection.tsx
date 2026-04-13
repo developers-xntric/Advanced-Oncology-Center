@@ -13,7 +13,7 @@ export default function HeroSection() {
           className="object-cover object-center"
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
       </div>
 
       {/* Content */}
@@ -27,7 +27,7 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="mb-4 text-[30px] font-bold lg:leading-[65px] leading-[40px] tracking-tight text-white md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-[30px] font-bold lg:leading-16.25 leading-10 tracking-tight text-white md:text-5xl lg:text-6xl">
             Advanced Cancer Care. Compassionate Support at Every Step
           </h1>
 
