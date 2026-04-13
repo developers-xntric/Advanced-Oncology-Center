@@ -14,22 +14,50 @@ export default function ContactSection() {
         service: 'Oncology',
         message: '',
     });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<{ type: 'success' | 'error' | null; message: string }>({
+        type: null,
+        message: '',
+    });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        console.log('Form submitted:', formData);
-        // Reset form
-        setFormData({
-            fullName: '',
-            phoneNumber: '',
-            service: 'Oncology',
-            message: '',
-        });
+        setIsSubmitting(true);
+        setSubmitStatus({ type: null, message: '' });
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                setSubmitStatus({ type: 'success', message: 'Thank you! We will contact you soon.' });
+                setFormData({
+                    fullName: '',
+                    phoneNumber: '',
+                    service: 'Oncology',
+                    message: '',
+                });
+            } else {
+                setSubmitStatus({ type: 'error', message: data.error || 'Failed to send message. Please try again.' });
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setSubmitStatus({ type: 'error', message: 'Network error. Please check your connection and try again.' });
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const services = [
@@ -82,6 +110,18 @@ export default function ContactSection() {
                     {/* Form */}
                     <div className="order-1 md:order-2">
                         <form onSubmit={handleSubmit} className="bg-[rgba(255,255,255,0.20)] rounded-2xl p-6 md:p-8 text-white">
+                            {/* Status Message */}
+                            {submitStatus.type && (
+                                <div
+                                    className={`mb-4 p-3 rounded-lg ${
+                                        submitStatus.type === 'success'
+                                            ? 'bg-green-500/80'
+                                            : 'bg-red-500/80'
+                                    }`}
+                                >
+                                    {submitStatus.message}
+                                </div>
+                            )}
                             <div className="mb-5">
                                 <label className="block text-sm font-medium mb-2">Full Name *</label>
                                 <input
@@ -137,9 +177,10 @@ export default function ContactSection() {
 
                             <button
                                 type="submit"
-                                className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
+                                disabled={isSubmitting}
+                                className="bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
                             >
-                                Get in Touch
+                                {isSubmitting ? 'Sending...' : 'Get in Touch'}
                                 <Send size={18} />
                             </button>
                         </form>
