@@ -33,7 +33,7 @@ export default function CancerTreatmentSection() {
 
   return (
     <section className="w-full bg-white py-16 md:py-20 ">
-      <div className="mx-auto max-w-[1350px] w-[90%]">
+      <div className="mx-auto max-w-[1350px] w-[80%]">
         {/* Header */}
         <div className="mb-8 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#009788]">
@@ -42,31 +42,19 @@ export default function CancerTreatmentSection() {
           <h2 className="mb-3 text-3xl font-medium bg-gradient-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl lg:text-5xl">
             Cancer Treatment Options
           </h2>
-          <p className="text-[14px] md:text-base text-[#333] 2xl:text-lg">
+          <p className="text-base text-[#333] 2xl:text-lg">
             Advanced Care Oncology Center can help with any cancer treatment
           </p>
         </div>
 
         {/* Content Grid */}
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-2 md:gap-4 xl:gap-0">
+        <div className="grid grid-cols-3 ">
           {/* Left Column */}
-          <div className="grid grid-cols-2 gap-3 md:gap-4 order-1">
+          <div className="grid grid-cols-2 gap-3 md:gap-4">
             {leftColumnCancers.map((cancer) => (
               <div
                 key={cancer}
-                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 xl:text-base"
-              >
-                {cancer}
-              </div>
-            ))}   
-          </div>
-
-          {/* Right Column */}
-          <div className="grid grid-cols-2 gap-3 md:gap-4 order-2 lg:order-3">
-            {rightColumnCancers.map((cancer) => (
-              <div
-                key={cancer}
-                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 xl:text-base"
+                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md md:px-5 md:py-6 md:text-base"
               >
                 {cancer}
               </div>
@@ -74,13 +62,25 @@ export default function CancerTreatmentSection() {
           </div>
 
           {/* Center Image */}
-          <div className="relative mx-auto mt-5 md:mt-0 h-[400px] md:h-80 w-full max-w-sm overflow-hidden rounded-xl order-3 lg:order-2 lg:h-auto">
+          <div className="relative mx-auto h-64 w-full max-w-sm overflow-hidden rounded-xl  h-full">
             <Image
               src="/cancer-treatment-nurse.png"
               alt="Nurse caring for elderly patient"
               fill
-              className="md:object-cover"
+              className="object-cover"
             />
+          </div>
+
+          {/* Right Column */}
+          <div className="grid grid-cols-2 gap-3 md:gap-4">
+            {rightColumnCancers.map((cancer) => (
+              <div
+                key={cancer}
+                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md md:px-5 md:py-6 md:text-base"
+              >
+                {cancer}
+              </div>
+            ))}
           </div>
         </div>
       </div>
