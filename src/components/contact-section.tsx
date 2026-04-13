@@ -2,7 +2,10 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { Users, Zap, Heart, Send } from 'lucide-react';
+import ESO from './icons/eso';
+import CT from './icons/ct';
+import Heart from './icons/heart';
+import { Send } from 'lucide-react';
 
 export default function ContactSection() {
     const [formData, setFormData] = useState({
@@ -31,17 +34,17 @@ export default function ContactSection() {
 
     const services = [
         {
-            icon: Users,
+            icon: ESO,
             title: 'Experienced Oncology Specialists',
             description: 'Our team of expert oncologists brings years of experience.',
         },
         {
-            icon: Zap,
+            icon: Heart,
             title: 'Advanced Technology & Precision',
             description: 'State-of-the-art equipment and precision treatment methods.',
         },
         {
-            icon: Heart,
+            icon: CT,
             title: 'Patient-Centered Approach',
             description: 'Your wellbeing and comfort are our top priorities.',
         },
@@ -62,7 +65,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Form and Image */}
-            <div className="max-w-7xl mx-auto px-4 mb-12 md:mb-16">
+            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4 mb-12 md:mb-8">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     {/* Image */}
                     <div className="order-2 md:order-1">
@@ -145,7 +148,7 @@ export default function ContactSection() {
             </div>
 
             {/* Service Cards */}
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-6">
                     {services.map((service, index) => {
                         const IconComponent = service.icon;
@@ -154,10 +157,10 @@ export default function ContactSection() {
                                 key={index}
                                 className="bg-[rgba(255,255,255,0.20)] flex items-center px-4 py-2 gap-3 rounded-xl text-white hover:shadow-lg transition-shadow duration-300"
                             >
-                                <div className="bg-[rgba(255,255,255,0.20)] border border-[rgba(255,255,255,0.50)] w-15 h-12 flex items-center justify-center rounded-xl">
-                                    <IconComponent size={24} />
+                                <div className="bg-[rgba(255,255,255,0.20)] border border-[rgba(255,255,255,0.50)] w-14 h-12 flex items-center justify-center rounded-xl">
+                                    <IconComponent />
                                 </div>
-                                <h3 className="text-lg md:text-[18px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
+                                <h3 className="text-lg md:text-[19px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
                             </div>
                         );
                     })}
