@@ -2,24 +2,24 @@
 
 export default function AboutCenter() {
   return (
-    <section className="w-full bg-white py-16 px-4 md:px-8 lg:px-16">
-      <div className="max-w-7xl mx-auto flex flex-col gap-8 lg:gap-12 items-center">
+    <section className="w-full bg-white py-8 md:pt-8 md:pb-14 ">
+      <div className="mx-auto max-w-[1350px] w-[80%]">
         {/* Text Content */}
-        <div className="flex flex-col md:flex-row gap-8">
+        <div className="flex flex-col md:flex-row gap-6 ">
           {/* Heading */}
-          <div className="space-y-3">
-            <p className="text-teal-600 text-sm font-semibold tracking-wide uppercase">
+          <div className="space-y-3 w-[40%] ">
+            <p className="mb-7 text-sm font-semibold uppercase tracking-wider text-[#009788]">
               About Advanced Oncology Center
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold text-teal-700 leading-tight">
-              Dedicated to<br />
-              Comprehensive<br />
-              Cancer Care
+            <h2 className="mb-3 text-[30px] lg:text-[40px] font-medium bg-gradient-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent leading-none">
+              Dedicated to
+              Comprehensive Cancer Care
+              
             </h2>
           </div>
 
           {/* Paragraphs */}
-          <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="text-base text-[#333] 2xl:text-lg  w-[60%] space-y-2">
             <p>
               We are devoted exclusively to cancer diagnosis and treatment. Our mission is to provide patients and their families with clarity, trust, and comfort at every stage of the journey.
             </p>
@@ -30,9 +30,9 @@ export default function AboutCenter() {
         </div>
 
         {/* Image */}
-        <div className="w-full">
+        <div className="w-full mt-6">
           <img
-            src="/about.png"
+            src="/about-new.png"
             alt="Advanced Oncology Center building"
             className="w-full h-auto rounded-lg shadow-lg object-cover"
           />

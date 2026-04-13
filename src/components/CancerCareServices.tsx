@@ -24,19 +24,19 @@ export default function CancerCareServices() {
   ];
 
   return (
-    <section className="w-full bg-white py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full bg-white py-8 md:py-14">
+      <div className="mx-auto px-4 md:px-8 max-w-[1350px] w-full">
         {/* Header */}
-        <div className="text-center mb-12">
-          <p className="text-sm font-semibold tracking-wide text-teal-600 mb-4 uppercase">
+        <div className="text-center mb-7">
+          <p className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#009788]">
             Experience you can trust. Care you can feel.
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-teal-800 mb-6">
+          <h2 className="mb-3 text-2xl sm:text-3xl font-medium bg-gradient-to-b from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl lg:text-5xl leading-tight">
             Providing Cancer Care With
             <br />
             State-of-the-Art Technology
-          </h1>
-          <p className="text-base text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          </h2>
+          <p className="text-sm sm:text-base text-[#333] leading-relaxed">
             We believe healing is more than medicine. That&apos;s why we combine cutting-edge equipment with genuine human support, ensuring every patient feels safe,
             understood, and cared for. Whether you are beginning your journey or seeking a second opinion, our center offers the knowledge, experience, and comfort you
             need.
@@ -44,11 +44,11 @@ export default function CancerCareServices() {
         </div>
 
         {/* Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {services.map((service) => (
-            <div key={service.id} className="flex flex-col">
+            <div key={service.id} className="flex flex-col border border-[#009788]/30 rounded-lg p-4 md:p-5 bg-white shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md">
               {/* Image Container */}
-              <div className="mb-6 rounded-lg overflow-hidden h-48 bg-gray-200">
+              <div className="mb-3 rounded-lg overflow-hidden h-40 sm:h-48 bg-gray-200">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -58,10 +58,10 @@ export default function CancerCareServices() {
 
               {/* Content */}
               <div>
-                <h3 className="text-xl font-bold text-teal-800 mb-3">
+                <h3 className="text-xl sm:text-[26px] font-medium text-[#004C3F] mb-1">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-sm text-[#787878] leading-relaxed">
                   {service.description}
                 </p>
               </div>
