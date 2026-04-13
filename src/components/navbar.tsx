@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Menu, X, Phone } from 'lucide-react';
+import Contact from './icons/contact';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full z-50 py-4 px-4 sm:px-6">
-            <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-4">
+            <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <div className="shrink-0 flex items-center">
@@ -27,40 +28,40 @@ export default function Navbar() {
                             alt="Advanced Oncology Centre"
                             width={600}
                             height={600}
-                            className="h-12 w-auto object-contain"
+                            className="h-11 w-auto object-contain"
                             priority
                         />
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-8 flex-1 justify-center">
+                    <div className="hidden md:flex items-center gap-4 justify-center">
                         {navItems.map((item) => (
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-gray-700 text-sm font-medium hover:text-teal-600 transition-colors duration-200 whitespace-nowrap"
+                                className="text-[#434B4D] text-md font-medium hover:text-teal-600 transition-colors duration-200 whitespace-nowrap"
                             >
                                 {item.label}
                             </a>
                         ))}
+
+                        {/* Phone Button - Desktop */}
+                        <div className="hidden md:flex items-center ml-4">
+                            <button className="bg-[url('/cbg.png')] bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
+                                <Contact />
+                            </button>
+                        </div>
                     </div>
 
-                    {/* Phone Button - Desktop */}
-                    <div className="hidden md:flex items-center">
-                        <button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-2.5 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
-                            <Phone size={18} />
-                            Call
-                        </button>
-                    </div>
 
                     {/* Mobile Menu Button */}
                     <div className="md:hidden flex items-center gap-3">
-                        <button className="bg-teal-600 hover:bg-teal-700 text-white p-2 rounded-lg transition-colors">
-                            <Phone size={18} />
+                        <button className="bg-[url('/cbg.png')] bg-cover bg-no-repeat text-white p-2 rounded-lg transition-colors">
+                            <Contact />
                         </button>
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="inline-flex items-center justify-center p-2 text-gray-700 hover:bg-gray-100 rounded-lg transition-colors"
+                            className="inline-flex items-center justify-center p-2 text-[#434B4D] hover:bg-gray-100 rounded-lg transition-colors"
                         >
                             {isOpen ? <X size={24} /> : <Menu size={24} />}
                         </button>
@@ -75,7 +76,7 @@ export default function Navbar() {
                                 <a
                                     key={item.label}
                                     href={item.href}
-                                    className="block px-4 py-2.5 rounded-lg text-gray-700 hover:bg-teal-50 hover:text-teal-600 transition-colors font-medium"
+                                    className="block px-4 py-2.5 rounded-lg text-[#434B4D] hover:bg-teal-50 hover:text-teal-600 transition-colors font-medium"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {item.label}
