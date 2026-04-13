@@ -29,7 +29,6 @@ export default function HeroSection() {
           className="object-cover object-center"
         />
       </div>
-      <div c></div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center 2xl:min-h-screen min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
