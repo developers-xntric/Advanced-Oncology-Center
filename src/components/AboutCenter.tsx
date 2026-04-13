@@ -3,7 +3,7 @@
 export default function AboutCenter() {
   return (
     <section className="w-full bg-white py-8 md:pt-8 md:pb-14">
-      <div className="mx-auto max-w-[1350px] w-[90%] md:w-[80%]">
+      <div className="mx-auto max-w-[1440px] w-[90%]">
         {/* Text Content */}
         <div className="flex flex-col md:flex-row gap-6">
           {/* Heading */}

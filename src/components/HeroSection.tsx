@@ -6,14 +6,14 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-bg.png"
-          alt="Doctor holding patient's hand with compassion"
+          src="/hero.png"
+          alt="Doctor holding patient's  hand with compassion"
           fill
           priority
           className="object-cover object-center"
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       {/* Content */}
@@ -63,7 +63,7 @@ export default function HeroSection() {
               </svg>
             </span>
           </button>
-          <div className=" mt-20">
+          <div className=" mt-10 hidden">
             <div className="animate-bounce">
               <svg
                 className="h-6 w-6 text-white"

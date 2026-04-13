@@ -33,7 +33,7 @@ export default function CancerTreatmentSection() {
 
   return (
     <section className="w-full bg-white py-16 md:py-20 ">
-      <div className="mx-auto max-w-[1350px] w-[80%]">
+      <div className="mx-auto max-w-[1440px] w-[90%]">
         {/* Header */}
         <div className="mb-8 text-center">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#009788]">

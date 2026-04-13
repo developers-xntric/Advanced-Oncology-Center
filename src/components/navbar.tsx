@@ -19,7 +19,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full z-50 py-4 px-4 sm:px-6">
-            <div className="max-w-7xl mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
+            <div className="max-w-[1440px] w-[90%] mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <div className="shrink-0 flex items-center">
