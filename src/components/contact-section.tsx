@@ -62,7 +62,7 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Form and Image */}
-            <div className="max-w-337.5 mx-auto px-4 mb-12 md:mb-16">
+            <div className="max-w-7xl mx-auto px-4 mb-12 md:mb-16">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     {/* Image */}
                     <div className="order-2 md:order-1">
@@ -145,22 +145,19 @@ export default function ContactSection() {
             </div>
 
             {/* Service Cards */}
-            <div className="max-w-6xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-6">
                     {services.map((service, index) => {
                         const IconComponent = service.icon;
                         return (
                             <div
                                 key={index}
-                                className="bg-teal-600 rounded-2xl p-6 md:p-8 text-white text-center hover:shadow-lg transition-shadow duration-300"
+                                className="bg-[rgba(255,255,255,0.20)] flex items-center px-4 py-2 gap-3 rounded-xl text-white hover:shadow-lg transition-shadow duration-300"
                             >
-                                <div className="flex justify-center mb-4">
-                                    <div className="bg-teal-500 rounded-full p-3">
-                                        <IconComponent size={32} />
-                                    </div>
+                                <div className="bg-[rgba(255,255,255,0.20)] border border-[rgba(255,255,255,0.50)] w-15 h-12 flex items-center justify-center rounded-xl">
+                                    <IconComponent size={24} />
                                 </div>
-                                <h3 className="text-lg md:text-xl font-bold mb-3">{service.title}</h3>
-                                <p className="text-teal-100 text-sm md:text-base">{service.description}</p>
+                                <h3 className="text-lg md:text-[18px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
                             </div>
                         );
                     })}
