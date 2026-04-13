@@ -19,7 +19,7 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative 2xl:min-h-[800px] min-h-[900px] w-full overflow-hidden">
-      {/* Background Image */}
+      
       <div className="absolute inset-0">
         <Image
           src="/hero.png"
