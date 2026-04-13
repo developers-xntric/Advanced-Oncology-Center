@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative lg:min-h-200 min-h-225 w-full overflow-hidden">
+    <section className="relative 2xl:min-h-[800px] min-h-[900px] w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -17,8 +17,8 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center lg:min-h-screen min-h-225  w-[90%] 2xl:max-w-360 mx-auto">
-        <div className=" lg:w-[50%] ">
+      <div className="relative z-10 flex items-center 2xl:min-h-screen min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
+        <div className="w-[60%] 2xl:w-[50%] ">
           {/* Badge */}
           <div className="mb-6">
             <span className="inline-block rounded-md bg-white/10 px-4 py-2 text-[9px] md:text-xs font-medium uppercase tracking-wider text-white backdrop-blur-sm border border-[#009788]/30">
