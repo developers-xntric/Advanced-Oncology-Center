@@ -71,7 +71,7 @@ export default function Footer() {
                             {['Home', 'About Us', 'Imaging', 'Informed Care', 'Second Opinion', 'Contact'].map((link) => (
                                 <li key={link}>
                                     <a
-                                        href="#"
+                                        href="#services"
                                         className="text-black transition-colors duration-200 text-sm md:text-base"
                                     >
                                         {link}
@@ -88,8 +88,8 @@ export default function Footer() {
                             {['PET / CT Scan', 'Chemotherapy', 'Radiotherapy', 'Consultation'].map((service) => (
                                 <li key={service}>
                                     <a
-                                        href="#"
-                                        className="text-black hover:text-white transition-colors duration-200 text-sm md:text-base"
+                                        href="#services"
+                                        className="text-black transition-colors duration-200 text-sm md:text-base"
                                     >
                                         {service}
                                     </a>
