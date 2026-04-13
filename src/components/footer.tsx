@@ -11,7 +11,7 @@ export default function Footer() {
             borderRadius: "30px 30px 0 0"
         }}>
             {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4 sm:px-4 py-12 md:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
                     {/* Logo and About Section */}
                     <div className="md:col-span-4 p-3 bg-[url('/footer-lbg.png')] bg-center bg-cover bg-no-repeat rounded-xl">
@@ -63,11 +63,10 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
-
                     {/* Quick Links */}
-                    <div className="md:col-span-2">
+                    <div className="md:col-span-2 md:block hidden">
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Quick Links</h3>
-                        <ul className="space-y-2 md:space-y-3">
+                        <ul className="space-y-1 md:space-y-2">
                             {['Home', 'About Us', 'Imaging', 'Informed Care', 'Second Opinion', 'Contact'].map((link) => (
                                 <li key={link}>
                                     <a
@@ -82,9 +81,9 @@ export default function Footer() {
                     </div>
 
                     {/* Services */}
-                    <div className="md:col-span-2">
+                    <div className="md:col-span-2 md:block hidden">
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Services</h3>
-                        <ul className="space-y-2 md:space-y-3">
+                        <ul className="space-y-1 md:space-y-2">
                             {['PET / CT Scan', 'Chemotherapy', 'Radiotherapy', 'Consultation'].map((service) => (
                                 <li key={service}>
                                     <a
@@ -96,6 +95,41 @@ export default function Footer() {
                                 </li>
                             ))}
                         </ul>
+                    </div>
+                    <div className='flex justify-between md:hidden'>
+                        {/* Quick Links */}
+                        <div className="md:col-span-2">
+                            <h3 className="text-lg font-bold mb-4 md:mb-6">Quick Links</h3>
+                            <ul className="space-y-1 md:space-y-3">
+                                {['Home', 'About Us', 'Imaging', 'Informed Care', 'Second Opinion', 'Contact'].map((link) => (
+                                    <li key={link}>
+                                        <a
+                                            href="#services"
+                                            className="text-black transition-colors duration-200 text-sm md:text-base"
+                                        >
+                                            {link}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Services */}
+                        <div className="md:col-span-2">
+                            <h3 className="text-lg font-bold mb-4 md:mb-6">Services</h3>
+                            <ul className="space-y-1 md:space-y-3">
+                                {['PET / CT Scan', 'Chemotherapy', 'Radiotherapy', 'Consultation'].map((service) => (
+                                    <li key={service}>
+                                        <a
+                                            href="#services"
+                                            className="text-black transition-colors duration-200 text-sm md:text-base"
+                                        >
+                                            {service}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
 
                     {/* Map Section */}
