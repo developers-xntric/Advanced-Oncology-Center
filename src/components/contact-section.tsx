@@ -51,7 +51,7 @@ export default function ContactSection() {
     ];
 
     return (
-        <section id="contact" className="py-12 md:py-20 bg-[url('/contact-bg.png')] bg-cover bg-no-repeat">
+        <section id="contact" className="py-12 md:pt-20 md:pb-28 bg-[url('/contact-bg.png')] bg-cover bg-no-repeat">
             {/* Contact Header */}
             <div className="text-center mb-12 md:mb-16 px-4">
                 <p className="text-white text-sm md:text-base font-semibold uppercase tracking-wide mb-4">
