@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative lg:min-h-[800px] min-h-[900px] w-full overflow-hidden">
+    <section className="relative lg:min-h-200 min-h-225 w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center lg:min-h-screen min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
+      <div className="relative z-10 flex items-center lg:min-h-screen min-h-225  w-[90%] 2xl:max-w-360 mx-auto">
         <div className=" lg:w-[50%] ">
           {/* Badge */}
           <div className="mb-6">
@@ -27,7 +27,7 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="mb-4 text-[30px] font-bold lg:leading-[65px] leading-[40px] tracking-tight text-white md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-[30px] font-bold lg:leading-16.25 leading-10 tracking-tight text-white md:text-5xl lg:text-6xl">
             Advanced Cancer Care. Compassionate Support at Every Step
           </h1>
 
