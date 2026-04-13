@@ -26,7 +26,7 @@ export default function CancerCareServices() {
   ];
 
   return (
-    <section className="w-full bg-white py-8 md:pt-14 md:pb-8">
+    <section id="services" className="w-full bg-white pt-14  md:pt-14 md:pb-8">
       <div className="mx-auto max-w-[1440px] w-[90%] md:w-[80%]">
         {/* Header */}
         <div className="text-center mb-6 md:mb-7">

@@ -12,7 +12,7 @@ export default function ImagingServicesSection() {
   ];
 
   return (
-    <section className="relative w-full overflow-hidden py-16 md:py-20 ">
+    <section id="imaging" className="relative w-full overflow-hidden py-16 md:py-20 ">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

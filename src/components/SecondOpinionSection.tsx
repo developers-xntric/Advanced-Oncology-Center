@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SecondOpinionSection() {
   return (
-    <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
+    <section id="opinion" className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-[1440px] w-[90%]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-6">
           {/* Left Content Card */}
