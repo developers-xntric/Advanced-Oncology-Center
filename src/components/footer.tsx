@@ -31,7 +31,7 @@ export default function Footer() {
                         {/* Contact Icons */}
                         <div className="flex justify-center gap-4">
                             <a
-                                href="tel:+971042228890"
+                                
                                 className="bg-[rgba(249,249,249,0.20)] hover:bg-teal-500 p-4 rounded-xl transition-colors duration-200 inline-flex"
                                 aria-label="Call us"
                             >

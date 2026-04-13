@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { Menu, X, Phone } from 'lucide-react';
 import Contact from './icons/contact';
+import Link from 'next/link';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full z-50 py-4 ">
-            <div className="max-w-[1440px] w-[90%] mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
+            <div className="max-w-360 w-[90%] mx-auto bg-white rounded-2xl shadow-lg px-6 sm:px-8 py-3">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <div className="shrink-0 flex items-center">
@@ -51,7 +52,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-6 justify-center">
+                    <div className="hidden xl:flex items-center gap-6 justify-center">
                         {navItems.map((item) => (
                             <a
                                 key={item.label}
@@ -65,15 +66,15 @@ export default function Navbar() {
 
                         {/* Phone Button - Desktop */}
                         <div className="hidden md:flex items-center ml-4">
-                            <button className="bg-[url('/cbg.png')] cursor-pointer bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
+                            <Link href="tel:+971042228890" className="bg-[url('/cbg.png')] cursor-pointer bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
                                 <Contact />
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
 
                     {/* Mobile Menu Button */}
-                    <div className="md:hidden flex items-center gap-3">
+                    <div className="xl:hidden flex items-center gap-3">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="inline-flex items-center justify-center p-2 text-[#434B4D] hover:bg-gray-100 rounded-lg transition-colors"
