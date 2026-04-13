@@ -1,7 +1,6 @@
 'use client';
 
 import Image from 'next/image';
-import { Phone, Mail, MapPin, MailIcon } from 'lucide-react';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -32,7 +31,7 @@ export default function Footer() {
                         {/* Contact Icons */}
                         <div className="flex justify-center gap-4">
                             <a
-                                href="tel:+971123456789"
+                                href="tel:+971042228890"
                                 className="bg-[rgba(249,249,249,0.20)] hover:bg-teal-500 p-4 rounded-xl transition-colors duration-200 inline-flex"
                                 aria-label="Call us"
                             >
@@ -42,7 +41,7 @@ export default function Footer() {
 
                             </a>
                             <a
-                                href="mailto:info@advancedoncology.ae"
+                                href="mailto:admin@advancedoncology.ae"
                                 className="bg-[rgba(249,249,249,0.20)] hover:bg-teal-500 p-4 rounded-xl transition-colors duration-200 inline-flex"
                                 aria-label="Email us"
                             >
@@ -52,7 +51,7 @@ export default function Footer() {
 
                             </a>
                             <a
-                                href="#"
+                                href="https://maps.google.com/?cid=12469732631489381878&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA&hl=en&source=embed"
                                 className="bg-[rgba(249,249,249,0.20)] hover:bg-teal-500 p-4 rounded-xl transition-colors duration-200 inline-flex"
                                 aria-label="Find us on map"
                             >
@@ -67,13 +66,13 @@ export default function Footer() {
                     <div className="md:col-span-2 md:block hidden">
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Quick Links</h3>
                         <ul className="space-y-1 md:space-y-2">
-                            {['Home', 'About Us', 'Imaging', 'Informed Care', 'Second Opinion', 'Contact'].map((link) => (
-                                <li key={link}>
+                            {[{ name: "Home", link: "#" }, { name: "About Us", link: "#about" }, { name: "Imaging", link: "#imaging" }, { name: "Informed Care", link: "#informed" }, { name: "Second Opinion", link: "#opinion" }, { name: "Contact", link: "#contact" }].map((link) => (
+                                <li key={link.name}>
                                     <a
-                                        href="#services"
+                                        href={link.link}
                                         className="text-black transition-colors duration-200 text-sm md:text-base"
                                     >
-                                        {link}
+                                        {link.name}
                                     </a>
                                 </li>
                             ))}
@@ -84,7 +83,7 @@ export default function Footer() {
                     <div className="md:col-span-2 md:block hidden">
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Services</h3>
                         <ul className="space-y-1 md:space-y-2">
-                            {['PET / CT Scan', 'Chemotherapy', 'Radiotherapy', 'Consultation'].map((service) => (
+                            {['PET / CT Scan', 'Chemotherapy', 'Radiotherapy'].map((service) => (
                                 <li key={service}>
                                     <a
                                         href="#services"
