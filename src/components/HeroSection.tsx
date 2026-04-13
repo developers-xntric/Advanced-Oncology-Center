@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[800px] w-full overflow-hidden">
+    <section className="relative lg:min-h-200 min-h-225 w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -13,26 +13,26 @@ export default function HeroSection() {
           className="object-cover object-center"
         />
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen  w-[90%] 2xl:max-w-[1440px] mx-auto">
-        <div className=" md:w-[50%] ">
+      <div className="relative z-10 flex items-center lg:min-h-screen min-h-225  w-[90%] 2xl:max-w-360 mx-auto">
+        <div className=" lg:w-[50%] ">
           {/* Badge */}
           <div className="mb-6">
-            <span className="inline-block rounded-md bg-white/10 px-4 py-2 text-xs font-medium uppercase tracking-wider text-white backdrop-blur-sm border border-[#009788]/30">
+            <span className="inline-block rounded-md bg-white/10 px-4 py-2 text-[9px] md:text-xs font-medium uppercase tracking-wider text-white backdrop-blur-sm border border-[#009788]/30">
               Welcome to Advanced Oncology Center
             </span>
           </div>
 
           {/* Heading */}
-          <h1 className="mb-4 text-4xl font-bold leading-[65px] tracking-tight text-white md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 text-[30px] font-bold lg:leading-16.25 leading-10 tracking-tight text-white md:text-5xl lg:text-6xl">
             Advanced Cancer Care. Compassionate Support at Every Step
           </h1>
 
           {/* Subtitle */}
-          <p className="mb-3 text-base font-semibold text-white">
+          <p className="mb-3 text-[14px] md:text-base font-semibold text-white">
             Because healing is more than medicine
           </p>
 

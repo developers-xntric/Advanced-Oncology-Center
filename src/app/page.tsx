@@ -3,6 +3,8 @@ import ImagingServicesSection from "@/components/ImagingServicesSection";
 import CancerTreatmentSection from "@/components/CancerTreatmentSection";
 import AboutCenter from "@/components/AboutCenter";
 import CancerCareServices from "@/components/CancerCareServices";
+import HealingSection from "@/components/HealingSection";
+import SecondOpinionSection from "@/components/SecondOpinionSection";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       
       <ImagingServicesSection />
       <CancerTreatmentSection />
+      <HealingSection />
+      <SecondOpinionSection />
     </div>
   );
 }
