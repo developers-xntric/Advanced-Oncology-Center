@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function SecondOpinionSection() {
   return (
     <section className="w-full bg-gray-50 py-16 md:py-20 lg:py-24">
-      <div className="mx-auto max-w-[1440px] w-[90%]">
+      <div className="mx-auto max-w-360 w-[90%]">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-6">
           {/* Left Content Card */}
           <div className="rounded-[20px] bg-[#F4F4F4] border border-[#009788]/30 px-5 py-6 shadow-sm md:px-8 md:py-20 ">
 
-            <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-gradient-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl lg:text-5xl">
+            <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-linear-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent lg:text-5xl">
               Second Opinion
             </h2>
             {/* Paragraph 1 */}

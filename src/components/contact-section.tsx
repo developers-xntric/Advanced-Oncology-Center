@@ -62,11 +62,11 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Form and Image */}
-            <div className="max-w-6xl mx-auto px-4 mb-12 md:mb-16">
+            <div className="max-w-337.5 mx-auto px-4 mb-12 md:mb-16">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                     {/* Image */}
                     <div className="order-2 md:order-1">
-                        <div className="relative h-64 md:h-80 rounded-3xl overflow-hidden shadow-lg">
+                        <div className="relative h-64 md:h-140 rounded-3xl overflow-hidden shadow-lg">
                             <Image
                                 src="/contact.png"
                                 alt="Doctor consulting with patient"
@@ -88,7 +88,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please enter your name"
                                     required
-                                    className="w-full px-4 py-3 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] focus:outline-none focus:ring-teal-400 transition-all"
+                                    className="w-full px-4 py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all"
                                 />
                             </div>
 
@@ -101,7 +101,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please enter your mobile"
                                     required
-                                    className="w-full px-4 py-3 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] focus:outline-none focus:ring-teal-400 transition-all"
+                                    className="w-full px-4 py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all"
                                 />
                             </div>
 
@@ -111,7 +111,7 @@ export default function ContactSection() {
                                     name="service"
                                     value={formData.service}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-lg text-white focus:outline-none border border-[rgba(255,255,255,0.50)] focus:ring-teal-400 transition-all appearance-none cursor-pointer"
+                                    className="w-full px-4 py-2 rounded-lg text-white focus:outline-none border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] transition-all appearance-none cursor-pointer"
                                 >
                                     <option value="Oncology">Oncology</option>
                                     <option value="Chemotherapy">Chemotherapy</option>
@@ -127,14 +127,14 @@ export default function ContactSection() {
                                     value={formData.message}
                                     onChange={handleChange}
                                     placeholder="Please write your message here"
-                                    rows={5}
-                                    className="w-full px-4 py-3 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] focus:outline-none focus:ring-teal-400 transition-all resize-none"
+                                    rows={4}
+                                    className="w-full px-4 py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all resize-none"
                                 />
                             </div>
 
                             <button
                                 type="submit"
-                                className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
+                                className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
                             >
                                 Get in Touch
                                 <Send size={18} />
