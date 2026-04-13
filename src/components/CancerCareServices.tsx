@@ -27,7 +27,7 @@ export default function CancerCareServices() {
 
   return (
     <section id="services" className="w-full bg-white pt-14  md:pt-14 md:pb-8">
-      <div className="mx-auto max-w-[1440px] w-[90%] md:w-[80%]">
+      <div className="mx-auto max-w-[1440px] w-[90%]">
         {/* Header */}
         <div className="text-center mb-6 md:mb-7">
           <p className="mb-2 md:mb-3 text-xs md:text-sm font-semibold uppercase tracking-wider text-[#009788]">

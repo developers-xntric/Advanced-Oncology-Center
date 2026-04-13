@@ -28,12 +28,13 @@ export default function HeroSection() {
           priority
           className="object-cover object-center"
         />
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent" />
       </div>
-      <div c></div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center 2xl:min-h-screen min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
-        <div className="md:w-[60%] 2xl:w-[50%] bg-black/15 backdrop-blur-3xl border border-[#009788]/30 p-6 rounded-[20px]">
+        <div className="md:w-[60%] 2xl:w-[50%] bg-black/15 backdrop-blur-md border border-[#009788]/30 p-6 rounded-[20px]">
           {/* Badge */}
           <div className="mb-6">
             <span className="inline-block rounded-md bg-white/10 px-4 py-2 text-[9px] md:text-xs font-medium uppercase tracking-wider text-white backdrop-blur-sm border border-[#009788]/30">
