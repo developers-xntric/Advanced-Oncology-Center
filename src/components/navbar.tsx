@@ -28,7 +28,7 @@ export default function Navbar() {
                             alt="Advanced Oncology Centre"
                             width={600}
                             height={600}
-                            className="h-11 w-auto object-contain"
+                            className="h-11 w-50 md:w-auto object-contain"
                             priority
                         />
                     </div>
