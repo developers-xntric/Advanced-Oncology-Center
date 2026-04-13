@@ -1,24 +1,39 @@
+'use client';
+
 import Image from "next/image";
 
 export default function HeroSection() {
+  const scrollToNextSection = () => {
+    const element = document.getElementById('services');
+    if (element) {
+      const navbarHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
-    <section className="relative 2xl:min-h-[800px] min-h-[900px] w-full overflow-hidden">
+    <section id="home" className="relative 2xl:min-h-[800px] min-h-[900px] w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-bg.png"
-          alt="Doctor holding patient's hand with compassion"
+          src="/hero.png"
+          alt="Doctor holding patient's  hand with compassion"
           fill
           priority
           className="object-cover object-center"
         />
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-linear-to-r from-black/50 to-transparent" />
       </div>
+      <div c></div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center 2xl:min-h-screen min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
-        <div className="w-[60%] 2xl:w-[50%] ">
+        <div className="md:w-[60%] 2xl:w-[50%] bg-black/15 backdrop-blur-3xl border border-[#009788]/30 p-6 rounded-[20px]">
           {/* Badge */}
           <div className="mb-6">
             <span className="inline-block rounded-md bg-white/10 px-4 py-2 text-[9px] md:text-xs font-medium uppercase tracking-wider text-white backdrop-blur-sm border border-[#009788]/30">
@@ -45,15 +60,16 @@ export default function HeroSection() {
           </p>
 
           {/* CTA Button */}
-          <button className="group flex items-center gap-3 rounded-md border border-white text-sm font-medium text-white transition-all duration-200 hover:bg-white hover:text-gray-900 px-1 py-1 cursor-pointer">
+          <button className="group flex items-center gap-3 rounded-md border border-white text-sm font-medium text-white transition-all duration-200 hover:bg-white hover:text-gray-900 pl-3 pr-1 py-1 cursor-pointer">
+
             Get in Touch
             <span className="flex h-10 w-10 items-center justify-center rounded bg-white transition-colors duration-200 group-hover:bg-gray-100">
               <svg
-                className="h-3 w-3 text-gray-900"
+                className="h-5 w-5 text-black"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                strokeWidth={3}
+                strokeWidth={2}
               >
                 <path
                   strokeLinecap="round"
@@ -63,10 +79,10 @@ export default function HeroSection() {
               </svg>
             </span>
           </button>
-          <div className=" mt-20">
+          <div className="mt-10 cursor-pointer" onClick={scrollToNextSection}>
             <div className="animate-bounce">
               <svg
-                className="h-6 w-6 text-white"
+                className="h-8 w-8 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
