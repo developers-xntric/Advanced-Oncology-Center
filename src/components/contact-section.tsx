@@ -48,14 +48,14 @@ export default function ContactSection() {
     ];
 
     return (
-        <section id="contact" className="py-12 md:py-20 bg-linear-to-b from-white to-teal-50">
+        <section id="contact" className="py-12 md:py-20 bg-[url('/contact-bg.png')] bg-cover bg-no-repeat">
             {/* Contact Header */}
             <div className="text-center mb-12 md:mb-16 px-4">
-                <p className="text-teal-600 text-sm md:text-base font-semibold uppercase tracking-wide mb-2">
+                <p className="text-white text-sm md:text-base font-semibold uppercase tracking-wide mb-4">
                     WE&apos;RE HERE TO SUPPORT YOU
                 </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
-                <p className="text-gray-600 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+                <h2 className="text-3xl md:text-4xl font-medium text-white mb-4">Contact Us</h2>
+                <p className="text-white text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
                     You are never alone on this journey. Whether you have questions, need guidance, or want to schedule a
                     consultation, our team is ready to listen and support you with clarity, care, and expertise.
                 </p>
@@ -68,7 +68,7 @@ export default function ContactSection() {
                     <div className="order-2 md:order-1">
                         <div className="relative h-64 md:h-80 rounded-3xl overflow-hidden shadow-lg">
                             <Image
-                                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/contact-6b6JWzU7wq1VUx46ikHAt4ybUUbNoC.png"
+                                src="/contact.png"
                                 alt="Doctor consulting with patient"
                                 fill
                                 className="object-cover"
@@ -78,7 +78,7 @@ export default function ContactSection() {
 
                     {/* Form */}
                     <div className="order-1 md:order-2">
-                        <form onSubmit={handleSubmit} className="bg-teal-600 rounded-2xl p-6 md:p-8 text-white">
+                        <form onSubmit={handleSubmit} className="bg-[rgba(255,255,255,0.20)] rounded-2xl p-6 md:p-8 text-white">
                             <div className="mb-5">
                                 <label className="block text-sm font-medium mb-2">Full Name *</label>
                                 <input
@@ -88,7 +88,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please enter your name"
                                     required
-                                    className="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all"
+                                    className="w-full px-4 py-3 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] focus:outline-none focus:ring-teal-400 transition-all"
                                 />
                             </div>
 
@@ -101,7 +101,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please enter your mobile"
                                     required
-                                    className="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all"
+                                    className="w-full px-4 py-3 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] focus:outline-none focus:ring-teal-400 transition-all"
                                 />
                             </div>
 
@@ -111,7 +111,7 @@ export default function ContactSection() {
                                     name="service"
                                     value={formData.service}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all appearance-none bg-white cursor-pointer"
+                                    className="w-full px-4 py-3 rounded-lg text-white focus:outline-none border border-[rgba(255,255,255,0.50)] focus:ring-teal-400 transition-all appearance-none cursor-pointer"
                                 >
                                     <option value="Oncology">Oncology</option>
                                     <option value="Chemotherapy">Chemotherapy</option>
@@ -128,7 +128,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please write your message here"
                                     rows={5}
-                                    className="w-full px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-400 transition-all resize-none"
+                                    className="w-full px-4 py-3 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] focus:outline-none focus:ring-teal-400 transition-all resize-none"
                                 />
                             </div>
 
