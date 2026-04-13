@@ -34,12 +34,12 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-4 justify-center">
+                    <div className="hidden md:flex items-center gap-6 justify-center">
                         {navItems.map((item) => (
                             <a
                                 key={item.label}
                                 href={item.href}
-                                className="text-[#434B4D] text-md font-medium hover:text-teal-600 transition-colors duration-200 whitespace-nowrap"
+                                className="text-[#434B4D] text-[15px] font-medium hover:text-teal-600 transition-colors duration-200 whitespace-nowrap"
                             >
                                 {item.label}
                             </a>
