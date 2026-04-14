@@ -85,7 +85,7 @@ export default function ContactSection() {
                 <p className="text-white text-sm md:text-base font-semibold uppercase tracking-wide mb-4">
                     WE&apos;RE HERE TO SUPPORT YOU
                 </p>
-                <h2 className="text-3xl md:text-4xl font-medium text-white mb-4">Contact Us</h2>
+                <h2 className="text-3xl md:text-5xl font-medium text-white mb-4">Contact Us</h2>
                 <p className="text-white text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
                     You are never alone on this journey. Whether you have questions, need guidance, or want to schedule a
                     consultation, our team is ready to listen and support you with clarity, care, and expertise.
@@ -93,8 +93,8 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Form and Image */}
-            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4 mb-12 md:mb-8">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="2xl:max-w-360 md:w-[95%] xl:w-[90%] mx-auto px-4 mb-12 md:mb-8">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-6 xl:gap-12 items-center">
                     {/* Image */}
                     <div className="order-2 md:order-1">
                         <div className="relative h-64 md:h-140 rounded-3xl overflow-hidden shadow-lg">
@@ -156,10 +156,10 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     className="w-full px-4 py-2 rounded-lg text-white focus:outline-none border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] transition-all appearance-none cursor-pointer"
                                 >
-                                    <option value="Oncology">Oncology</option>
-                                    <option value="Chemotherapy">Chemotherapy</option>
-                                    <option value="Radiotherapy">Radiotherapy</option>
-                                    <option value="Consultation">Consultation</option>
+                                    <option className='text-black!' value="Oncology">Oncology</option>
+                                    <option className='text-black!' value="Chemotherapy">Chemotherapy</option>
+                                    <option className='text-black!' value="Radiotherapy">Radiotherapy</option>
+                                    <option className='text-black!' value="Consultation">Consultation</option>
                                 </select>
                             </div>
 
@@ -189,7 +189,7 @@ export default function ContactSection() {
             </div>
 
             {/* Service Cards */}
-            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4">
+            <div className="2xl:max-w-360 md:w-[95%] xl:w-[90%] mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-6">
                     {services.map((service, index) => {
                         const IconComponent = service.icon;
