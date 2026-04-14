@@ -16,6 +16,7 @@ export default function HeroSection() {
       });
     }
   };
+  
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
