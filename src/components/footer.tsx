@@ -10,7 +10,7 @@ export default function Footer() {
             borderRadius: "30px 30px 0 0"
         }}>
             {/* Main Footer Content */}
-            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4 sm:px-4 py-12 md:py-16">
+            <div className="2xl:max-w-360 md:w-[95%] xl:w-[90%] mx-auto px-4 sm:px-4 py-12 md:py-16">
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
                     {/* Logo and About Section */}
                     <div className="md:col-span-4 p-3 bg-[url('/footer-lbg.png')] bg-center bg-cover bg-no-repeat rounded-xl">
