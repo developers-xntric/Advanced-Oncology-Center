@@ -8,7 +8,7 @@ export default function AboutCenter() {
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Heading */}
           <div className="space-y-3 w-full lg:w-[40%]">
-            <p className="text-center md:text-left mb-5 md:mb-7 text-xs md:text-sm font-semibold uppercase tracking-wider text-[#009788] sm">
+            <p className="text-center md:text-left mb-5 md:mb-3 2xl:mb-7 text-xs md:text-sm font-semibold uppercase tracking-wider text-[#009788] sm">
               About Advanced Oncology Center
             </p>
 
