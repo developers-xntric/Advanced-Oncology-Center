@@ -54,7 +54,7 @@ export default function CancerTreatmentSection() {
             {leftColumnCancers.map((cancer) => (
               <div
                 key={cancer}
-                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm md:text-[10.5px] font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6  xl:text-base"
+                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm md:text-[10.5px] font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 lg:text-[12.5px]  2xl:text-base"
               >
                 {cancer}
               </div>
@@ -66,7 +66,7 @@ export default function CancerTreatmentSection() {
             {rightColumnCancers.map((cancer) => (
               <div
                 key={cancer}
-                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm md:text-[10.5px] font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 xl:text-base"
+                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm md:text-[10.5px] font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 lg:text-[12.5px]  2xl:text-base"
               >
                 {cancer}
               </div>
