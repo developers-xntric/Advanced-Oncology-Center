@@ -20,7 +20,7 @@ export default function HealingSection() {
         {/* White Card */}
         <div className="max-w-xl rounded-xl bg-white/90 px-5 py-6 shadow-lg md:px-8 md:py-10 ">
           {/* Heading */}
-          <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-gradient-to-r lg:leading-[60px] from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl lg:text-5xl">
+          <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-gradient-to-r leading-[35px] lg:leading-[60px] from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-[30px] xl:text-5xl">
             Healing is more than just medicine.
           </h2>
 

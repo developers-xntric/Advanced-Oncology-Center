@@ -34,7 +34,7 @@ export default function CancerCareServices() {
             Experience you can trust. Care you can feel.
           </p>
 
-          <h2 className="mb-3 text-[24px] sm:text-[28px] md:text-4xl lg:text-5xl font-medium bg-gradient-to-b from-[#005f56] to-[#009788] bg-clip-text text-transparent leading-tight md:leading-[1.1]">
+          <h2 className="mb-3 text-[24px] sm:text-[28px] md:text-4xl xl:text-5xl font-medium bg-gradient-to-b from-[#005f56] to-[#009788] bg-clip-text text-transparent leading-tight md:leading-[1.1]">
             Providing Cancer Care With
             <br className="hidden sm:block" />
             State-of-the-Art Technology
@@ -50,7 +50,7 @@ export default function CancerCareServices() {
         </div>
 
         {/* Service Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-3">
           {services.map((service) => (
             <div
               key={service.id}

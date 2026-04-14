@@ -8,11 +8,11 @@ export default function SecondOpinionSection() {
           {/* Left Content Card */}
           <div className="rounded-[20px] bg-[#F4F4F4] border border-[#009788]/30 px-5 py-6 shadow-sm md:px-8 md:py-20 ">
 
-            <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-linear-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent lg:text-5xl">
+            <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-linear-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent xl:text-5xl md:leading-[55px]">
               Second Opinion
             </h2>
             {/* Paragraph 1 */}
-            <p className="mb-5 text-[14px] md:text-base leading-relaxed text-[#333]">
+            <p className="mb-5 text-[14px] xl:text-base leading-relaxed text-[#333]">
               We understand that a cancer diagnosis can bring uncertainty, questions, and
               difficult decisions. At Advanced Care Oncology Center, we believe every patient
               deserves clarity and confidence before moving forward. That's why we provide
@@ -21,7 +21,7 @@ export default function SecondOpinionSection() {
             </p>
 
             {/* Paragraph 2 */}
-            <p className="text-[14px] md:text-base leading-relaxed text-[#333]">
+            <p className="text-[14px] xl:text-base leading-relaxed text-[#333]">
               Our experienced oncology specialists ensure accuracy and explore the most
               appropriate options for your condition. Whether you are newly diagnosed or
               considering a change in treatment plan, we are here to guide you with

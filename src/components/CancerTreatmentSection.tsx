@@ -39,7 +39,7 @@ export default function CancerTreatmentSection() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#009788]">
             Informed Care
           </p>
-          <h2 className="mb-3 text-3xl font-medium bg-gradient-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl lg:text-5xl">
+          <h2 className="mb-3 text-3xl font-medium bg-gradient-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl xl:text-5xl">
             Cancer Treatment Options
           </h2>
           <p className="text-[14px] md:text-base text-[#333] 2xl:text-lg">
@@ -54,7 +54,7 @@ export default function CancerTreatmentSection() {
             {leftColumnCancers.map((cancer) => (
               <div
                 key={cancer}
-                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 xl:text-base"
+                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm md:text-[10.5px] font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6  xl:text-base"
               >
                 {cancer}
               </div>
@@ -66,7 +66,7 @@ export default function CancerTreatmentSection() {
             {rightColumnCancers.map((cancer) => (
               <div
                 key={cancer}
-                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 xl:text-base"
+                className="rounded-[20px] border border-[#009788]/30 bg-white px-4 py-3 text-center text-sm md:text-[10.5px] font-medium text-[#333] shadow-sm transition-all duration-200 hover:border-teal-400 hover:shadow-md xl:px-5 xl:py-6 xl:text-base"
               >
                 {cancer}
               </div>
