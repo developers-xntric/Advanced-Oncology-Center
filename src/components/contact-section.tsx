@@ -85,7 +85,7 @@ export default function ContactSection() {
                 <p className="text-white text-sm md:text-base font-semibold uppercase tracking-wide mb-4">
                     WE&apos;RE HERE TO SUPPORT YOU
                 </p>
-                <h2 className="text-3xl md:text-4xl font-medium text-white mb-4">Contact Us</h2>
+                <h2 className="text-3xl md:text-5xl font-medium text-white mb-4">Contact Us</h2>
                 <p className="text-white text-sm md:text-lg max-w-4xl mx-auto leading-relaxed">
                     You are never alone on this journey. Whether you have questions, need guidance, or want to schedule a
                     consultation, our team is ready to listen and support you with clarity, care, and expertise.
@@ -93,11 +93,11 @@ export default function ContactSection() {
             </div>
 
             {/* Contact Form and Image */}
-            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4 mb-12 md:mb-8">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="2xl:max-w-360 md:w-[95%] xl:w-[90%] mx-auto px-4 mb-12 md:mb-8">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-6 xl:gap-12 items-center">
                     {/* Image */}
-                    <div className="order-2 md:order-1">
-                        <div className="relative h-64 md:h-140 rounded-3xl overflow-hidden shadow-lg">
+                    <div className="order-1">
+                        <div className="relative h-64 md:h-124 lg:h-140 rounded-3xl overflow-hidden shadow-lg">
                             <Image
                                 src="/contact.png"
                                 alt="Doctor consulting with patient"
@@ -109,7 +109,7 @@ export default function ContactSection() {
 
                     {/* Form */}
                     <div className="order-1 md:order-2">
-                        <form onSubmit={handleSubmit} className="bg-[rgba(255,255,255,0.20)] rounded-2xl p-6 md:p-8 text-white">
+                        <form onSubmit={handleSubmit} className="bg-[rgba(255,255,255,0.20)] rounded-2xl p-6 md:p-5 lg:p-8 text-white">
                             {/* Status Message */}
                             {submitStatus.type && (
                                 <div
@@ -131,7 +131,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please enter your name"
                                     required
-                                    className="w-full px-4 py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all"
+                                    className="w-full px-4 md:px-2 lg:px-4 py-2 md:py-1 lg:py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all"
                                 />
                             </div>
 
@@ -144,7 +144,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please enter your mobile"
                                     required
-                                    className="w-full px-4 py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all"
+                                    className="w-full px-4 md:px-2 lg:px-4 py-2 md:py-1 lg:py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all"
                                 />
                             </div>
 
@@ -154,12 +154,12 @@ export default function ContactSection() {
                                     name="service"
                                     value={formData.service}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-2 rounded-lg text-white focus:outline-none border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] transition-all appearance-none cursor-pointer"
+                                    className="w-full px-4 md:px-2 lg:px-4 py-2 md:py-1 lg:py-2 rounded-lg text-white focus:outline-none border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] transition-all appearance-none cursor-pointer"
                                 >
-                                    <option value="Oncology">Oncology</option>
-                                    <option value="Chemotherapy">Chemotherapy</option>
-                                    <option value="Radiotherapy">Radiotherapy</option>
-                                    <option value="Consultation">Consultation</option>
+                                    <option className='text-black!' value="Oncology">Oncology</option>
+                                    <option className='text-black!' value="Chemotherapy">Chemotherapy</option>
+                                    <option className='text-black!' value="Radiotherapy">Radiotherapy</option>
+                                    <option className='text-black!' value="Consultation">Consultation</option>
                                 </select>
                             </div>
 
@@ -171,7 +171,7 @@ export default function ContactSection() {
                                     onChange={handleChange}
                                     placeholder="Please write your message here"
                                     rows={4}
-                                    className="w-full px-4 py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all resize-none"
+                                    className="w-full px-4 md:px-2 lg:px-4 py-2 md:py-1 lg:py-2 rounded-lg text-white placeholder-white border border-[rgba(255,255,255,0.50)] bg-[rgba(255,255,255,0.20)] focus:outline-none transition-all resize-none"
                                 />
                             </div>
 
@@ -189,7 +189,7 @@ export default function ContactSection() {
             </div>
 
             {/* Service Cards */}
-            <div className="2xl:max-w-360 md:w-[90%] mx-auto px-4">
+            <div className="2xl:max-w-360 md:w-[95%] xl:w-[90%] mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-6">
                     {services.map((service, index) => {
                         const IconComponent = service.icon;
@@ -201,7 +201,7 @@ export default function ContactSection() {
                                 <div className="bg-[rgba(255,255,255,0.20)] border border-[rgba(255,255,255,0.50)] w-14 h-12 flex items-center justify-center rounded-xl">
                                     <IconComponent />
                                 </div>
-                                <h3 className="text-lg md:text-[17.5px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
+                                <h3 className="text-lg md:text-xs lg:text-[17.5px] leading-tight font-medium mb-3 relative top-1">{service.title}</h3>
                             </div>
                         );
                     })}
