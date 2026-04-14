@@ -11,7 +11,7 @@ export default function Footer() {
         }}>
             {/* Main Footer Content */}
             <div className="2xl:max-w-360 md:w-[95%] xl:w-[90%] mx-auto px-4 sm:px-4 py-12 md:py-16">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12">
                     {/* Logo and About Section */}
                     <div className="md:col-span-4 p-3 bg-[url('/footer-lbg.png')] bg-center bg-cover bg-no-repeat rounded-xl">
                         <div className="mb-4">
@@ -65,12 +65,12 @@ export default function Footer() {
                     {/* Quick Links */}
                     <div className="md:col-span-2 md:block hidden">
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Quick Links</h3>
-                        <ul className="space-y-1 md:space-y-2">
+                        <ul className="space-y-1 md:space-y-0 lg:space-y-2">
                             {[{ name: "Home", link: "#" }, { name: "About Us", link: "#about" }, { name: "Imaging", link: "#imaging" }, { name: "Informed Care", link: "#informed" }, { name: "Second Opinion", link: "#opinion" }, { name: "Contact", link: "#contact" }].map((link) => (
                                 <li key={link.name}>
                                     <a
                                         href={link.link}
-                                        className="text-black transition-colors duration-200 text-sm md:text-base"
+                                        className="text-black transition-colors duration-200 text-sm lg:text-base"
                                     >
                                         {link.name}
                                     </a>
@@ -82,12 +82,12 @@ export default function Footer() {
                     {/* Services */}
                     <div className="md:col-span-2 md:block hidden">
                         <h3 className="text-lg font-bold mb-4 md:mb-6">Services</h3>
-                        <ul className="space-y-1 md:space-y-2">
+                        <ul className="space-y-1 lg:space-y-2">
                             {['PET / CT Scan', 'Chemotherapy', 'Radiotherapy'].map((service) => (
                                 <li key={service}>
                                     <a
                                         href="#services"
-                                        className="text-black transition-colors duration-200 text-sm md:text-base"
+                                        className="text-black transition-colors duration-200 text-sm lg:text-base"
                                     >
                                         {service}
                                     </a>
