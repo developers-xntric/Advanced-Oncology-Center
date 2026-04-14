@@ -43,7 +43,7 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="mb-4 text-[30px] font-bold lg:leading-16.25 xl:leading-14 2xl:leading-10 tracking-tight text-white md:text-5xl 2xl:text-6xl">
+          <h1 className="mb-4 text-[30px] font-bold lg:leading-16.25 xl:leading-14 tracking-tight text-white md:text-5xl 2xl:text-6xl">
             Advanced Cancer Care. Compassionate Support at Every Step
           </h1>
 
