@@ -113,11 +113,10 @@ export default function ContactSection() {
                             {/* Status Message */}
                             {submitStatus.type && (
                                 <div
-                                    className={`mb-4 p-3 rounded-lg ${
-                                        submitStatus.type === 'success'
+                                    className={`mb-4 p-3 rounded-lg ${submitStatus.type === 'success'
                                             ? 'bg-green-500/80'
                                             : 'bg-red-500/80'
-                                    }`}
+                                        }`}
                                 >
                                     {submitStatus.message}
                                 </div>
@@ -178,7 +177,7 @@ export default function ContactSection() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-300 disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
+                                className="bg-[#004445] disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
                             >
                                 {isSubmitting ? 'Sending...' : 'Get in Touch'}
                                 <Send size={18} />
