@@ -42,7 +42,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="shrink-0 flex items-center">
                         <Image
-                            src="/logo.png"
+                            src="/logo1.png"
                             alt="Advanced Oncology Centre"
                             width={600}
                             height={600}
