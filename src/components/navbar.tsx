@@ -66,7 +66,7 @@ export default function Navbar() {
 
                         {/* Phone Button - Desktop */}
                         <div className="hidden md:flex items-center ml-4">
-                            <Link href="tel:+971042228890" className="bg-[url('/cbg.png')] cursor-pointer bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
+                            <Link href="tel:+971042228890" className="bg-[#004445] cursor-pointer bg-cover bg-no-repeat text-white px-4 py-4 rounded-lg flex items-center gap-2 transition-colors duration-200 font-medium">
                                 <Contact />
                             </Link>
                         </div>
