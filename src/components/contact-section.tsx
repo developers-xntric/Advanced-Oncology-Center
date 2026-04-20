@@ -114,8 +114,8 @@ export default function ContactSection() {
                             {submitStatus.type && (
                                 <div
                                     className={`mb-4 p-3 rounded-lg ${submitStatus.type === 'success'
-                                            ? 'bg-green-500/80'
-                                            : 'bg-red-500/80'
+                                        ? 'bg-green-500/80'
+                                        : 'bg-red-500/80'
                                         }`}
                                 >
                                     {submitStatus.message}
@@ -177,10 +177,12 @@ export default function ContactSection() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="bg-[#004445] disabled:cursor-not-allowed text-white px-6 py-2 rounded-lg font-medium flex items-center gap-2 transition-colors duration-200"
+                                className="bg-white text-[#004445] disabled:cursor-not-allowed font-bold px-4 py-2 rounded-lg flex items-center gap-1 transition-colors duration-200 ms-auto justify-between"
                             >
                                 {isSubmitting ? 'Sending...' : 'Get in Touch'}
-                                <Send size={18} />
+                                <div className='w-8 h-8 flex justify-center items-center rounded-md bg-[#004445] text-white relative left-2'><svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 19 14" fill="none">
+                                    <path d="M10.9268 0C10.9268 0.742 11.6598 1.85 12.4018 2.78C13.3558 3.98 14.4958 5.027 15.8028 5.826C16.7828 6.425 17.9708 7 18.9268 7M18.9268 7C17.9708 7 16.7818 7.575 15.8028 8.174C14.4958 8.974 13.3558 10.021 12.4018 11.219C11.6598 12.15 10.9268 13.26 10.9268 14M18.9268 7H0" stroke="white" stroke-width="2" />
+                                </svg></div>
                             </button>
                         </form>
                     </div>
