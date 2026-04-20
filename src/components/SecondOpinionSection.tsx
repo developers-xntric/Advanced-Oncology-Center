@@ -8,7 +8,7 @@ export default function SecondOpinionSection() {
           {/* Left Content Card */}
           <div className="rounded-[20px] bg-[#F4F4F4] border border-[#009788]/30 px-5 py-6 shadow-sm md:px-8 md:py-20 ">
 
-            <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-linear-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent xl:text-5xl md:leading-[55px]">
+            <h2 className="mb-3 text-[28px] md:text-3xl font-medium bg-[#004445] bg-clip-text text-transparent xl:text-5xl md:leading-[55px]">
               Second Opinion
             </h2>
             {/* Paragraph 1 */}

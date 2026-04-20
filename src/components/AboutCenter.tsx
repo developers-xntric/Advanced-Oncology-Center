@@ -12,7 +12,7 @@ export default function AboutCenter() {
               About Advanced Oncology Center
             </p>
 
-            <h2 className="-mb-2 md:mb-3 text-center md:text-left text-[24px] sm:text-[28px] md:text-4xl xl:text-[40px] font-medium bg-gradient-to-b from-[#005f56] to-[#009788] bg-clip-text text-transparent leading-tight md:leading-none ">
+            <h2 className="-mb-2 md:mb-3 text-center md:text-left text-[24px] sm:text-[28px] md:text-4xl xl:text-[40px] font-medium bg-[#004445] bg-clip-text text-transparent leading-tight md:leading-none ">
               Dedicated to Comprehensive Cancer Care
             </h2>
           </div>

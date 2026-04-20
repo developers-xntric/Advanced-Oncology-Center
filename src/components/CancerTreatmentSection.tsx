@@ -39,7 +39,7 @@ export default function CancerTreatmentSection() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-[#009788]">
             Informed Care
           </p>
-          <h2 className="mb-3 text-3xl font-medium bg-gradient-to-b  from-[#005f56] to-[#009788] bg-clip-text text-transparent md:text-4xl xl:text-5xl">
+          <h2 className="mb-3 text-3xl font-medium bg-[#004445] bg-clip-text text-transparent md:text-4xl xl:text-5xl">
             Cancer Treatment Options
           </h2>
           <p className="text-[14px] md:text-base text-[#333] 2xl:text-lg">
