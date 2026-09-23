@@ -43,7 +43,7 @@ export default function CancerTreatmentSection() {
             Cancer Treatment Options
           </h2>
           <p className="text-[14px] md:text-base text-[#333] 2xl:text-lg">
-            Advanced Care Oncology Center can help with any cancer treatment
+           Advanced Diagnostic & Oncology Centre can help with any cancer treatment
           </p>
         </div>
 

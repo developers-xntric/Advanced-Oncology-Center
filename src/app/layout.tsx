@@ -5,10 +5,10 @@ import Footer from "@/components/footer";
 
 
 export const metadata: Metadata = {
-  title: "Advanced Oncology Center",
+  title: "Advanced Diagnostic & Oncology Centre",
   description: "Comprehensive Cancer Care with Compassion and Expertise",
   icons: {
-    icon: "/fav-icon.png",
+    icon: "/nav-logo.png",
   },
 };
 

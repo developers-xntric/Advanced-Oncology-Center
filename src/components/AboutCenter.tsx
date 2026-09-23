@@ -9,7 +9,7 @@ export default function AboutCenter() {
           {/* Heading */}
           <div className="space-y-3 w-full lg:w-[40%]">
             <p className="text-center md:text-left mb-5 md:mb-3 2xl:mb-7 text-xs md:text-sm font-semibold uppercase tracking-wider text-[#009788] sm">
-              About Advanced Oncology Center
+            ABOUT Advanced Diagnostic & Oncology Centre
             </p>
 
             <h2 className="-mb-2 md:mb-3 text-center md:text-left text-[24px] sm:text-[28px] md:text-4xl xl:text-[40px] font-medium bg-[#004445] bg-clip-text text-transparent leading-tight md:leading-none ">

@@ -14,7 +14,7 @@ export default function SecondOpinionSection() {
             {/* Paragraph 1 */}
             <p className="mb-5 text-[14px] xl:text-base leading-relaxed text-[#333]">
               We understand that a cancer diagnosis can bring uncertainty, questions, and
-              difficult decisions. At Advanced Care Oncology Center, we believe every patient
+              difficult decisions. At Advanced Diagnostic & Oncology Centre, we believe every patient
               deserves clarity and confidence before moving forward. That's why we provide
               comprehensive second opinions—carefully reviewing your medical records, imaging,
               pathology, and treatment recommendations.
