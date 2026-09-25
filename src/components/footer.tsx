@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="md:col-span-4 p-3 bg-[url('/footer-lbg.png')] bg-left bg-cover bg-no-repeat rounded-xl flex flex-col">
             <div className="mb-4">
               <Image
-                src="/footer-logo2.png"
+                src="/footer-logo-white-new.png"
                 alt="Advanced Oncology Centre"
                 width={600}
                 height={600}

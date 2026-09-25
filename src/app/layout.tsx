@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Advanced Diagnostic & Oncology Centre",
   description: "Comprehensive Cancer Care with Compassion and Expertise",
   icons: {
-    icon: "/nav-logo.png",
+    icon: "/footer-logo-white-new.png",
   },
 };
 

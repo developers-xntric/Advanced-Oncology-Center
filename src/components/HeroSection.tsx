@@ -49,7 +49,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center 2xl:min-h-screen min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
+      <div className="relative z-10 flex items-center 2xl:min min-h-[900px]  w-[90%] 2xl:max-w-[1440px] mx-auto">
         <div className="md:w-[50%] 2xl:w-[50%] bg-black/15 backdrop-blur-md border border-[#009788]/30 p-6 rounded-[20px]">
           {/* Badge */}
           <div className="mb-6">

@@ -42,10 +42,10 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="shrink-0 flex items-center">
                         <Image
-                            src="/nav-logo.png"
+                            src="/nav-logo-new.png"
                             alt="Advanced Oncology Centre"
-                            width={600}
-                            height={600}
+                            width={2000}
+                            height={2000}
                             className="h-11 w-50 md:w-auto object-contain"
                             priority
                         />
